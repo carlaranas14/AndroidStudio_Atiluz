@@ -8,4 +8,8 @@
     <string name="password">Password</string>
     <string name="log_in">Log In</string>
     <string name="register">Register</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="book_your_van">Book your Van</string>
 </resources>

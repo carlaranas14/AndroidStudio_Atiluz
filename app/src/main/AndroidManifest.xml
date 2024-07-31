@@ -13,13 +13,28 @@
         android:theme="@style/Theme.AtiLuz"
         tools:targetApi="31">
         <activity
-            android:name=".Login"
+            android:name=".ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Tracking"
+            android:exported="false" />
+        <activity
+            android:name=".Booking"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".CustomerRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerDashboard"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
