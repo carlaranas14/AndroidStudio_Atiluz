@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:title="Pick Up"
+            android:id="@+id/pickup"
+            android:icon="@drawable/icons8_van_32px_1"/>
+        <item
+            android:title="Records"
+            android:id="@+id/records"
+            android:icon="@drawable/icons8_order_history_64px"/>
+        <item
+            android:id="@+id/driver_chat"
+            android:title="Chats"
+            android:icon="@drawable/icons8_chat_26px"/>
+        <item
+            android:title="Profile"
+            android:id="@+id/profile"
+            android:icon="@drawable/icons8_male_user_64px"/>
+</menu>
