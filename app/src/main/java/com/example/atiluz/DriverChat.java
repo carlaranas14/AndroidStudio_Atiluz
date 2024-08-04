@@ -21,7 +21,9 @@ public class DriverChat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_driver_chat);
+
         nav = findViewById(R.id.nav);
+        nav.setSelectedItemId(R.id.driver_chat);
 
         nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override

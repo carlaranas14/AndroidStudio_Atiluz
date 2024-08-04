@@ -4,7 +4,8 @@
         <item
             android:title="Pick Up"
             android:id="@+id/pickup"
-            android:icon="@drawable/icons8_van_32px_1"/>
+            android:icon="@drawable/icons8_van_32px_1"
+            app:showAsAction="never" />
         <item
             android:title="Records"
             android:id="@+id/records"

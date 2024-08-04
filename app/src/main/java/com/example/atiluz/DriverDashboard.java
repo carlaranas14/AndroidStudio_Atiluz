@@ -17,6 +17,7 @@ public class DriverDashboard extends AppCompatActivity {
 
     BottomNavigationView nav;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,19 +31,21 @@ public class DriverDashboard extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.pickup:
-                        return true;
+                        break;
                     case R.id.records:
                         startActivity(new Intent(DriverDashboard.this, Records.class));
-                        return true;
+                        break;
                     case R.id.driver_chat:
                         startActivity(new Intent(DriverDashboard.this, DriverChat.class));
-                        return true;
+                        break;
                     case R.id.profile:
                         startActivity(new Intent(DriverDashboard.this, Profile.class));
-                        return true;
+                        break;
                     default:
                         return false;
                 }
+                item.setChecked(true);
+                return true;
             }
         });
     }

@@ -12,4 +12,11 @@
     <string name="close">Close Navigation Drawer</string>
     <string name="dashboard">Dashboard</string>
     <string name="book_your_van">Book your Van</string>
+    <string name="fbLink">
+        <a href="https://www.facebook.com/atiluz.coop">AtiLuzTransport Service Cooperative</a>
+    </string>
+
+    <string name="addressLink">
+        <a href="https://www.google.com/maps/dir/14.570257,121.0449762/15.0565751,120.9380622/@14.811572,120.6455531,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu">2nd flr, St. Thomas Bldg., Maharlika Hwy, Malipampang</a>
+    </string>
 </resources>

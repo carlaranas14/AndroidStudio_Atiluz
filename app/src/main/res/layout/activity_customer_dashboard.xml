@@ -15,17 +15,394 @@
 
             <include
                 layout="@layout/toolbar"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dash Board"
-                android:layout_gravity="center"
-                android:layout_marginTop="400dp"
-                android:textColor="@color/green"
-                android:textSize="36sp"/>
     </LinearLayout>
-    
+
+    <!-- Main content view -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/customer_dasboardText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:text="Username"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/customer_dasboardText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Welcome back"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dasboardText1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/customer_dasboardEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/gray"
+            android:drawableStart="@drawable/icons8_search_32px"
+            android:text=" Search here ..."
+            android:textColor="@color/grayer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dasboardText2"
+            app:layout_constraintVertical_bias="0.03"
+            />
+
+        <TextView
+            android:id="@+id/customer_dashboardText3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dasboardEditText1"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/customer_dashboardText4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="On Plan"
+            android:textColor="@color/gray"
+            android:gravity="top|center"
+            android:fontFamily="@font/poppins_light"
+            app:layout_constraintBottom_toBottomOf="@+id/customer_dashboardText3"
+            app:layout_constraintEnd_toEndOf="@+id/customer_dashboardText3"
+            app:layout_constraintStart_toStartOf="@+id/customer_dashboardText3"
+            app:layout_constraintTop_toTopOf="@+id/customer_dashboardText3" />
+        <TextView
+            android:id="@+id/customer_dashboardText5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="13"
+            android:fontFamily="@font/poppins_light"
+            android:paddingBottom="20dp"
+            android:textColor="@color/gray"
+            android:gravity="bottom|center"
+            app:layout_constraintBottom_toBottomOf="@+id/customer_dashboardText3"
+            app:layout_constraintEnd_toEndOf="@+id/customer_dashboardText3"
+            app:layout_constraintStart_toStartOf="@+id/customer_dashboardText3"
+            app:layout_constraintTop_toTopOf="@+id/customer_dashboardText3" />
+
+        <TextView
+            android:id="@+id/customer_dashboardText6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dasboardEditText1"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/customer_dashboardText7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="On Going"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/gray"
+            android:gravity="top|center"
+            app:layout_constraintBottom_toBottomOf="@+id/customer_dashboardText6"
+            app:layout_constraintEnd_toEndOf="@+id/customer_dashboardText6"
+            app:layout_constraintStart_toStartOf="@+id/customer_dashboardText6"
+            app:layout_constraintTop_toTopOf="@+id/customer_dashboardText6" />
+        <TextView
+            android:id="@+id/customer_dashboardText8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="1"
+            android:fontFamily="@font/poppins_light"
+            android:paddingBottom="20dp"
+            android:textColor="@color/gray"
+            android:gravity="bottom|center"
+            app:layout_constraintBottom_toBottomOf="@+id/customer_dashboardText6"
+            app:layout_constraintEnd_toEndOf="@+id/customer_dashboardText6"
+            app:layout_constraintStart_toStartOf="@+id/customer_dashboardText6"
+            app:layout_constraintTop_toTopOf="@+id/customer_dashboardText6" />
+
+        <TextView
+            android:id="@+id/customer_dashboardText9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dasboardEditText1"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/customer_dashboardText10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="Completed"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/gray"
+            android:gravity="top|center"
+            app:layout_constraintBottom_toBottomOf="@+id/customer_dashboardText9"
+            app:layout_constraintEnd_toEndOf="@+id/customer_dashboardText9"
+            app:layout_constraintStart_toStartOf="@+id/customer_dashboardText9"
+            app:layout_constraintTop_toTopOf="@+id/customer_dashboardText9" />
+        <TextView
+            android:id="@+id/customer_dashboardText11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="2"
+            android:fontFamily="@font/poppins_light"
+            android:paddingBottom="20dp"
+            android:textColor="@color/gray"
+            android:gravity="bottom|center"
+            app:layout_constraintBottom_toBottomOf="@+id/customer_dashboardText9"
+            app:layout_constraintEnd_toEndOf="@+id/customer_dashboardText9"
+            app:layout_constraintStart_toStartOf="@+id/customer_dashboardText9"
+            app:layout_constraintTop_toTopOf="@+id/customer_dashboardText9" />
+
+        <!-- Table here ... -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dashboardText9"
+            app:layout_constraintVertical_bias="0.0" >
+
+            <!-- table header -->
+            <TableRow
+                android:background="@color/green">
+
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Origin"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Destination"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Trip Ticket ID"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Time of Travel"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+
+            </TableRow>
+
+            <!-- table 1st row -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn1_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn2_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn3_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn4_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn5_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+
+            </TableRow>
+
+            <!-- table 2nd row -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn1_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn2_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn3_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn4_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+
+                <TextView
+                    android:id="@+id/customer_dashboardTableColumn5_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"

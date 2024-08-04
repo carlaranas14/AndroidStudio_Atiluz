@@ -9,4 +9,8 @@
     <color name="drawer">#D9D9D9</color>
     <color name="cg">#6AAC9E</color>
     <color name="ripple_color">#228570</color>
+    <color name="grayer">#6C6C6C</color>
+    <color name="receiver_chat">#228570</color>
+    <color name="sender_chat">#4d605c</color>
+    <color name="bookingHeader">#d9d9d9</color>
 </resources>

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -21,6 +23,12 @@ public class ContactUs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_contact_us);
+
+        TextView textView = findViewById(R.id.contactFB);
+        textView.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
+
+        TextView textView2 = findViewById(R.id.contactAddress);
+        textView2.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
 
         drawerLayout = findViewById(R.id.drawer_layout);
         menu = findViewById(R.id.menu);
