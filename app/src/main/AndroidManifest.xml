@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AtiLuz"
         tools:targetApi="31">
         <activity
+            android:name=".AdminDriversArchived"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPassengersArchived"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVehicleEdit"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDriverEdit"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPassengerEdit"
+            android:exported="false" />
+        <activity
             android:name=".AdminProfile"
             android:exported="false" />
         <activity
