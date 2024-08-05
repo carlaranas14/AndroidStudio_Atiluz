@@ -3,6 +3,8 @@ package com.example.atiluz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -44,6 +46,35 @@ public class Profile extends AppCompatActivity {
                         return false;
                 }
             }
+        });
+
+        TextView helpCenter = findViewById(R.id.helpCenter);
+
+        helpCenter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Profile.this, HelpCenter.class));
+            }
+        });
+
+        TextView vehicleInfo = findViewById(R.id.vehicleInfo);
+
+        vehicleInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Profile.this, DriverVehicleInfo.class));
+            }
+
+            });
+
+        TextView logout = findViewById(R.id.logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Profile.this, Login.class));
+            }
+
         });
     }
 }

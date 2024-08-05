@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".AdminProfile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,36 +36,31 @@
             android:layout_gravity="center"
             android:fontFamily="@font/poppins_medium"
             android:textSize="30sp"/>
-        <androidx.appcompat.widget.AppCompatRatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:numStars="5"
-            android:rating="4"/>
+
         <TextView
-            android:id="@+id/helpCenter"
+            android:id="@+id/archPassengers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="30dp"
             android:layout_marginHorizontal="100dp"
             android:drawablePadding="10dp"
-            android:text="Help Center"
+            android:text="Archived Passengers"
             android:fontFamily="@font/poppins_medium"
             android:textSize="20sp"
             android:clickable="true"
             android:focusable="true"
-            android:drawableLeft="@drawable/icons8_helping_hand_64px_1"/>
+            app:drawableLeftCompat="@drawable/icons8_remove_60px" />
         <TextView
-            android:id="@+id/vehicleInfo"
+            android:id="@+id/archDrivers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="30dp"
             android:layout_marginHorizontal="100dp"
             android:drawablePadding="10dp"
-            android:text="Vehicle Info"
+            android:text="Archived Drivers"
             android:fontFamily="@font/poppins_medium"
             android:textSize="20sp"
-            android:drawableLeft="@drawable/icons8_van_64px"/>
+            app:drawableStartCompat="@drawable/icons8_remove_60px" />
         <TextView
             android:id="@+id/logout"
             android:layout_width="wrap_content"
@@ -76,7 +71,7 @@
             android:text="LOG OUT"
             android:fontFamily="@font/poppins_medium"
             android:textSize="20sp"
-            android:drawableLeft="@drawable/icons8_logout_rounded_left_64px"/>
+            app:drawableLeftCompat="@drawable/icons8_logout_rounded_left_64px" />
 
 
 
@@ -89,7 +84,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/transparent_background"
         app:itemIconSize="36dp"
-        app:menu="@menu/driver_menu"
+        app:menu="@menu/admin_menu"
         app:itemBackground="@drawable/bottom_nav_selector"
         app:labelVisibilityMode="labeled"
         app:itemActiveIndicatorStyle="@style/Base.Theme.AtiLuz"

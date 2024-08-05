@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPassengers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/driver_toolbar"/>
+
+        <EditText
+            android:id="@+id/adminPassengerSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/gray"
+            android:drawableStart="@drawable/icons8_search_32px"
+            android:text=" Search here ..."
+            android:textColor="@color/grayer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_dashboardText9"
+            app:layout_constraintVertical_bias="0.0" >
+
+            <!-- table header -->
+            <TableRow
+                android:background="@color/green">
+
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fullname"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contact No."
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actions"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+
+            </TableRow>
+
+            <!-- table 1st row -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn1_2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/grayer"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn2_2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/grayer"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/grayer"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/admin_passengersTableColumn5_2btnEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Edit"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"/>
+
+                    <Button
+                        android:id="@+id/admin_passengersTableColumn5_2btnArchived"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Archived"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/grayer"/>
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <!-- table 2nd row -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn1_3"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawer_boarder"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/grayer"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn2_3"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/grayer"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+                <TextView
+                    android:id="@+id/admin_passengersTableColumn3_3"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/grayer"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/drawer_boarder"/>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/admin_passengersTableColumn5_3btnbtnEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Edit"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"/>
+
+                    <Button
+                        android:id="@+id/admin_passengersTableColumn5_3btnArchived"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Archived"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/grayer"/>
+                </LinearLayout>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/RideRequest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main view -->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/transparent_background"
+        app:itemIconSize="36dp"
+        app:menu="@menu/admin_menu"
+        app:itemBackground="@drawable/bottom_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:itemActiveIndicatorStyle="@style/Base.Theme.AtiLuz"
+        />
+
+</RelativeLayout>

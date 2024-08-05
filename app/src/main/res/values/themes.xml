@@ -3,8 +3,17 @@
     <style name="Base.Theme.AtiLuz" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/green</item>
         <item name="colorPrimaryVariant">@color/green</item>
-        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnBackground">@color/green</item>
+    </style>
+    <style name="Theme.AtiLuz" parent="Base.Theme.AtiLuz">
+        <!-- Customize your theme here -->
+        <item name="bottomNavigationStyle">@style/CustomBottomNavigationView</item>
     </style>
 
-    <style name="Theme.AtiLuz" parent="Base.Theme.AtiLuz" />
+    <style name="CustomBottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemBackground">@drawable/bottom_nav_selector</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+
 </resources>

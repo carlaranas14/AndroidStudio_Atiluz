@@ -9,7 +9,7 @@
 
   <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       android:orientation="vertical">
 
     <include
@@ -32,15 +32,17 @@
       <com.google.android.material.tabs.TabItem
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="On Going"/>
+          android:text="On Going" />
+
       <com.google.android.material.tabs.TabItem
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="Completed"/>
+          android:text="Completed" />
+
       <com.google.android.material.tabs.TabItem
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="Cancelled"/>
+          android:text="Cancelled" />
 
     </com.google.android.material.tabs.TabLayout>
 
@@ -56,12 +58,12 @@
       android:layout_height="wrap_content"
       android:id="@+id/nav"
       android:layout_alignParentBottom="true"
-      app:itemRippleColor="@color/green"
+      android:background="@drawable/transparent_background"
       app:itemIconSize="36dp"
       app:menu="@menu/driver_menu"
-      android:background="@color/white"
+      app:itemBackground="@drawable/bottom_nav_selector"
       app:labelVisibilityMode="labeled"
-
+      app:itemActiveIndicatorStyle="@style/Base.Theme.AtiLuz"
       />
 
 </RelativeLayout>

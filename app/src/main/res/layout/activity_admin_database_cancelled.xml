@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDatabaseCancelled">
+
+    <EditText
+        android:id="@+id/adminCancelledSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/gray"
+        android:drawableStart="@drawable/icons8_search_32px"
+        android:text=" Search here ..."
+        android:textColor="@color/grayer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminCancelledSearchBar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- table header -->
+        <TableRow android:background="@color/green">
+
+            <TextView
+                android:id="@+id/admin_dashboardcancelledTableColumn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Origin"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Destination"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Trip Ticket ID"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Time of Travel"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Status"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+
+        </TableRow>
+
+        <!-- table 1st row -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn1_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn2_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn3_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn4_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn5_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <!-- table 2nd row -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn1_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn2_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn3_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn4_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/aadmin_dashboardcancelledTableColumn5_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/drawer_boarder"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
